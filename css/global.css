@@ -1,0 +1,126 @@
+/* ===============================
+   GLOBAL NEON + CASINO THEME
+   =============================== */
+
+body {
+    background: radial-gradient(circle at top, #00111f, #000000 70%);
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* NAVIGATION */
+nav {
+    width: 100%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0 20px #0077ff88;
+}
+
+nav a {
+    margin: 0 20px;
+    color: #66c7ff;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: #ffd36b;
+    text-shadow: 0 0 10px #ffd36b;
+}
+
+/* HEADERS */
+h1, h2, h3 {
+    text-shadow: 0 0 15px #008cff;
+}
+
+.neon-gold {
+    color: #ffd36b;
+    text-shadow: 0 0 20px #ffbb33;
+}
+
+/* CARD ELEMENTS */
+.card {
+    background: rgba(0, 0, 0, 0.45);
+    border: 2px solid #0077ff;
+    border-radius: 14px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 75%;
+    box-shadow: 0 0 25px #0055ff66;
+}
+
+/* SIMULATOR BUTTON */
+#openBtn {
+    padding: 15px 35px;
+    font-size: 22px;
+    border-radius: 12px;
+    background: linear-gradient(45deg, #008cff, #00d0ff);
+    border: none;
+    cursor: pointer;
+    color: black;
+    transition: 0.2s;
+}
+
+#openBtn:hover {
+    box-shadow: 0 0 25px #00aaff;
+}
+
+/* LOOT RESULT */
+#result {
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* RARITY COLORS */
+.common { color: gray; }
+.rare { color: #4f8cff; text-shadow: 0 0 10px #4f8cff; }
+.epic { color: #c14fff; text-shadow: 0 0 15px #c14fff; }
+.legendary {
+    color: #ffd36b;
+    text-shadow: 0 0 25px #ffdd77, 0 0 50px #ffbb00;
+}
+
+/* ITEM IMAGE */
+#itemImage {
+    margin-top: 20px;
+    width: 380px;
+    border-radius: 12px;
+    box-shadow: 0 0 25px #0077ff88;
+}
+
+/* LOOT BOX ANIMATION */
+.shake {
+    animation: shakeBox 0.4s infinite;
+}
+
+@keyframes shakeBox {
+    0% { transform: translate(0px, 0px); }
+    25% { transform: translate(4px, -4px); }
+    50% { transform: translate(-4px, 4px); }
+    75% { transform: translate(3px, -2px); }
+    100% { transform: translate(0px, 0px); }
+}
+
+/* GOLD FLASH FOR LEGENDARY */
+.legendary-flash {
+    animation: goldFlash 1.5s ease-out;
+}
+
+@keyframes goldFlash {
+    0% { box-shadow: 0 0 0px #ffd36b; }
+    50% { box-shadow: 0 0 45px #ffdd77; }
+    100% { box-shadow: 0 0 0px #ffd36b; }
+}
+
+/* SPENDING TRACKER */
+#spent {
+    font-size: 22px;
+    margin-top: 20px;
+    color: #ffd36b;
+}

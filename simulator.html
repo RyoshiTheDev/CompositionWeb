@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loot Box Simulator</title>
+
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="css/global.css">
+
+
+ 
+
+    <style>
+        /* Extra styling just for this page */
+        #lootBoxImage {
+            width: 260px;
+            margin-top: 25px;
+            border-radius: 14px;
+            box-shadow: 0 0 25px #0077ff88;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAV BAR -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="learn.html">Learn</a>
+        <a href="simulator.html">Simulator</a>
+        <a href="credits.html">Credits</a>
+    </nav>
+
+    <h1 class="neon-gold" style="margin-top: 40px;">🎁 Loot Box Simulator</h1>
+    <h2 style="color:#66c7ff;">Experience real CS2-style randomized drops</h2>
+
+    <!-- SIMULATOR CARD -->
+    <div class="card" style="width:70%;">
+
+        <h2 style="color:#66c7ff;">Click the box to roll</h2>
+
+        <!-- Loot Box Icon -->
+        <img src="Composition class project 2\img\Lootbox.png"
+             id="lootBoxImage"
+             alt="Loot Box Icon">
+
+        <br><br>
+
+        <!-- Button -->
+       <button id="openBtn" onclick="openLootBox()">Open Loot Box</button>
+
+
+        <!-- Loot Result -->
+        <div id="result"></div>
+
+        <!-- Item Image -->
+        <img id="itemImage" src="" alt="" style="display:block; margin:auto;">
+
+        <!-- Spending Tracker -->
+        <p id="spent">Total Spent: $0.00</p>
+    </div>
+
+    <div class="card">
+        <h2 class="neon-gold">💡 Tip</h2>
+        <p>Legendary items only have a 2% drop rate — good luck!</p>
+    </div>
+<script src="js/items.js"></script>
+<script src="js/loot.js"></script>
+</body>
+</html>
+
+</body>
+</html>
