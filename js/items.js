@@ -63,11 +63,12 @@ const lootTable = {
 };
 
 const dropOdds = {
-    legendary: 0.02, // 2%
+    legendary: 0.01, // 2%
     epic: 0.10,       // 8%
     rare: 0.30,       // 20%
     common: 0.70      // 70%
 };
 
 console.log("Loaded correct ITEMS.JS");
+
 
